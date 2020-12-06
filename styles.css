@@ -18,7 +18,7 @@ body {
 	color: whitesmoke;
 	text-align: center;
 	position: relative;
-    z-index: 3;
+  z-index: 3;
 }
 .box > img {
     object-fit: cover;
@@ -32,16 +32,16 @@ img {
 }
 .AMM {
 	text-align: center;
-	text-transform: uppercase;
-	color: rgb(223, 188, 74);
+  text-transform: uppercase;
+  bottom: 20px;
+	color: rgb(233, 166, 21);
 	margin: 0;
-	position: relative;
 	display: inline-flex;
 	z-index: 2;
-	padding-top: 35px;
-	text-decoration: none;
+  padding-top: 35px;
+  padding-bottom: 35px;
 	font-size: 9em;
-	font-weight: normal;
+	font-weight: bold;
 	font-family: "Philosopher";
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -52,11 +52,11 @@ img {
   font-size: 1.1em;
 	font-weight: lighter;
 	border-bottom: 1px solid rgba(255, 255, 255, .3);
-	position: flex;
-	z-index: 1;
+  position: fixed;
 	width: 100%;
 	margin: 0;
   background-color: black;
+  z-index: 5;
 }
  .nav li {
 	text-align: center;
@@ -87,32 +87,31 @@ img {
   .nav-front{
     text-decoration: none;
   }
-  a.nav-front:link
-{
-   color: #fb3f00;
-   text-decoration: none;
-}
-a.nav-front:visited
-{
-   color: #fb3f00;
-   text-decoration: none;
-}
-a.nav-front:hover
-{
-   color: #fb3f00;
-   text-decoration: none;
-}
-a.nav-front:active
-{
-   color: #fb3f00;
-   text-decoration: none;
-}
+  a.nav-front:link {
+    text-decoration: none;
+    color: #fff
+  }
+  
+  a.nav-front:visited {
+    text-decoration: none;
+    color: #fff
+  }
+  
+  a.nav-front:hover {
+    text-decoration: none;
+    color: #fff
+  }
+  
+  a.nav-front:active {
+    text-decoration: none;
+    color: #fff
+  }
   
 .wrapper {
     display: grid;
     grid-gap: 1em;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(30, 1fr);
+    grid-template-rows: repeat(55, 1fr);
 }
   .AncientBox {
     color: rgb(255, 255, 255);
@@ -375,7 +374,55 @@ a.nav-front:active
     background-size: cover;
     background-attachment: fixed;
     grid-column: 1 / 4;
-    grid-row: 17 / 26;
+    grid-row: 17 / 25;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .ReligionBox {
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 350%;
+    background: url('resources/images/bible.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    grid-column: 1 / 4;
+    grid-row: 25 / 33;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .PhilosophyBox {
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 350%;
+    background: url('resources/images/sparta.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    grid-column: 1 / 4;
+    grid-row: 33 / 41;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .TechBox {
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 350%;
+    background: url('resources/images/tech.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    grid-column: 1 / 4;
+    grid-row: 41 / 49;
     height: 350px;
 
     display: flex;
