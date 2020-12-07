@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+body {
+    background-image: linear-gradient(to right, black, rgb(255, 174, 0));
+    font-family: "Philosopher";
+    margin: 0;
+    color: white;
+  }
+.title {
+	background-color:rgba(0, 0, 0, .6);
+	background-image: url("resources/images/old.jpg");
+	background-blend-mode: multiply;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 5px;
+	padding-bottom: 20px;
+	margin: 15px;
+	height: 29vh;
+	color: whitesmoke;
+	text-align: center;
+	position: relative;
+  z-index: 3;
+}
+.AMM {
+	text-align: center;
+  text-transform: uppercase;
+	color: rgb(255, 174, 0);
+	margin: 0;
+	display: inline-flex;
+	z-index: 2;
+  padding: 20px;
+	font-size: 9em;
+	font-weight: bold;
+	font-family: "Cinzel Decorative";
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.nav ul {
+	margin: 0;
+}
+.main-nav {
+  font-size: 1.1em;
+	font-weight: lighter;
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+  position: fixed;
+	width: 100%;
+	margin: 0;
+  background-color: black;
+  z-index: 5;
+}
+ .nav li {
+	text-align: center;
+	display: inline-flex;
+}
+.nav a {
+	display: inline-block;
+	color: rgb(255, 174, 0);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	padding: .5em;
+	text-decoration: none;
+	margin: 0;
+}
+.nav a:hover {
+	background-color: rgba(255, 255, 255, .4);
+}
+p {
+  text-align: center;
+}
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  }
+  
+  .box:nth-child(even) {
+    color: rgb(255, 255, 255);
+  }
+  .nav-front{
+    text-decoration: none;
+  }
+  a.nav-front:link {
+    text-decoration: none;
+    color: #fff
+  }
+  
+  a.nav-front:visited {
+    text-decoration: none;
+    color: #fff
+  }
+  
+  a.nav-front:hover {
+    text-decoration: none;
+    color: #fff
+  }
+  
+  a.nav-front:active {
+    text-decoration: none;
+    color: #fff
+  }
+  /*Content Section*/
+
+  .wrapper {
+    display: grid;
+    position: relative;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(55, 1fr);
+}
+.MedievalBox {
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 350%;
+    background: url('resources/images/glass.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-11 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 11;
+    font-size: 100%;
+    background: url('resources/images/Charlemagne-by-Durer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-btn-holyRomanEmpire {
+    grid-column: 1 / 2;
+    grid-row: 11;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-txt-holyRomanEmpire {
+    grid-column: 1 / 2;
+    grid-row: 11 / 14;
+    font-size: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+  }
+  .box-12 {
+    grid-column: 2 / 3;
+    grid-row: 5 / 11;
+    font-size: 100%;
+    background: url('resources/images/William_the_Conqueror_-_c._1580.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-btn-feudalEurope {
+    grid-column: 2 / 3;
+    grid-row: 11;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-txt-feudalEurope {
+    grid-column: 2 / 3;
+    grid-row: 11 / 14;
+    font-size: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+  }
+  .box-13 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 11;
+    font-size: 100%;
+    background: url('resources/images/John_II_Komnenos_-_mosaic_image_digitally_restored.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-btn-byzantineEmpire {
+    grid-column: 3 / 4;
+    grid-row: 11;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-txt-byzantineEmpire {
+    grid-column: 3 / 4;
+    grid-row: 11 / 14;
+    font-size: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+  }
+  .box-14 {
+    grid-column: 2 / 4;
+    grid-row: 14 / 18;
+    font-size: 100%;
+    background: url('resources/images/quran\ \(2\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-btn-riseOfIslam {
+    grid-column: 1 / 2;
+    grid-row: 16;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-txt-riseOfIslam {
+    grid-column: 1 / 2;
+    grid-row: 15 / 17;
+    font-size: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+  }
+
+
