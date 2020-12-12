@@ -497,8 +497,15 @@ p {
     .title {
       width: 270px;
     }
-    .novalis .wrapper .box{
-      width: 100%;
+    .wrapper {
+      width: 50%;
+      height: 200px;
+      overflow: hidden;
+    }
+    .box {
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
   
   } 
