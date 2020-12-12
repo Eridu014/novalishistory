@@ -5,21 +5,23 @@ body {
     font-family: "Philosopher";
     margin: 0;
     color: white;
+    overflow-x: hidden;
+
+
   }
 .title {
-	background-color:rgba(0, 0, 0, .6);
-	background-image: url("resources/images/old.jpg");
-	background-blend-mode: multiply;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('resources/images/old.jpg');
   background-size: cover;
-  border: 2px solid black;
   border-radius: 5px;
 	padding-bottom: 20px;
-	margin: 15px;
-	height: 29vh;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 100%;
+	height: auto;
 	color: whitesmoke;
 	text-align: center;
-	position: relative;
   z-index: 3;
+  align-items: center;
 }
 .box > img {
     object-fit: cover;
@@ -28,17 +30,23 @@ body {
 }
 img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
 }
-.AMM {
-	text-align: center;
+.novalis {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('resources/images/old.jpg');
+  background-size: cover;
   text-transform: uppercase;
-	color: rgb(255, 174, 0);
-	margin: 0;
-	display: inline-flex;
+  width: 100%;
+  height: auto;
+	color: rgb(255, 145, 0);
+	margin: 0 auto;
+  display: block;
+  text-align: center;
+
+  align-items: center;
 	z-index: 2;
-  padding: 20px;
+  padding-top: 50px;
 	font-size: 9em;
 	font-weight: bold;
 	font-family: "Cinzel Decorative";
@@ -48,24 +56,25 @@ img {
 	margin: 0;
 }
 .main-nav {
-  font-size: 1.1em;
+  font-size: 1.3em;
 	font-weight: lighter;
-	border-bottom: 1px solid rgba(255, 255, 255, .3);
+	border-bottom: 2px solid rgba(255, 145, 0, .8);
   position: fixed;
-	width: 100%;
-	margin: 0;
+  height: auto;
+  width: 100%;
   background-color: black;
   z-index: 5;
+  text-align: center;
 }
  .nav li {
 	text-align: center;
-	display: inline-flex;
+	display: inline;
 }
 .nav a {
 	display: inline-block;
 	color: rgb(255, 174, 0);
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	padding: .5em;
+	padding: 0.5em;
 	text-decoration: none;
 	margin: 0;
 }
@@ -81,6 +90,7 @@ p {
   border-radius: 5px;
   padding: 20px;
   font-size: 150%;
+  border: 2px solid rgba(255, 145, 0, .8);
   }
   
   .box:nth-child(even) {
