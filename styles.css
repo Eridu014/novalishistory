@@ -482,3 +482,13 @@ p {
     text-align: center;
     font-size: 80%;
   }
+
+@media only screen and (max-width: 480px), (orientation: portrait) {
+    .title {
+      width: 270px;
+    }
+    .AMM .wrapper .box{
+      width: 95%;
+    }
+  
+  } 
