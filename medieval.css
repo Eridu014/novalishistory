@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
 body {
-    background-image: linear-gradient(to right, black, rgb(128, 89, 6));
+    background-image: linear-gradient(to right, rgb(3, 0, 0), rgb(0, 0, 0));
     font-family: "Philosopher";
     margin: 0;
     color: white;
@@ -107,7 +107,8 @@ p {
     'a a a a'
     'b d d f'
     'b d d f'
-    'c e e g'
+    'c d d g'
+    'j e e m'
     'j k k m'
     'j k k m'
     'h l l n'
@@ -242,6 +243,7 @@ p {
     align-items: top;
     justify-content: center;
     grid-area: h;
+    border: orange solid 2px;
   }
   .box-15 {
     font-size: 100%;
@@ -269,6 +271,7 @@ p {
     align-items: top;
     justify-content: center;
     grid-area: l;
+    border: orange solid 2px;
   }
   .box-16 {
     font-size: 100%;

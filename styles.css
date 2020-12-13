@@ -109,6 +109,7 @@ p {
   grid-row: span 3;
 }
   .AncientBox {
+    box-sizing: border-box;
     color: rgb(255, 255, 255);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 350%;
@@ -124,6 +125,7 @@ p {
   }
 
   .MedievalBox {
+    box-sizing: border-box;
     color: rgb(255, 255, 255);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 350%;
@@ -139,6 +141,7 @@ p {
 
   }
   .ModernBox {
+    box-sizing: border-box;
     color: rgb(255, 255, 255);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 350%;
@@ -153,6 +156,7 @@ p {
     justify-content: center;
   }
   .ReligionBox {
+    box-sizing: border-box;
     color: rgb(255, 255, 255);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 350%;
@@ -167,6 +171,7 @@ p {
     justify-content: center;
   }
   .HistoryBox {
+    box-sizing: border-box;
     color: rgb(255, 255, 255);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 350%;
@@ -181,6 +186,7 @@ p {
     justify-content: center;
   }
   .PhilosophyBox {
+    box-sizing: border-box;
     color: rgb (255, 255, 255);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 350%;
@@ -197,6 +203,7 @@ p {
     justify-content: center;
   }
   .TechBox {
+    box-sizing: border-box;
     color: rgb(255, 255, 255);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 350%;
@@ -210,118 +217,6 @@ p {
     align-items: center;
     justify-content: center;
   }
-  .box-16 {
-    grid-column: 3 / 4;
-    grid-row: 40 / 43;
-    font-size: 100%;
-    background: url('resources/images/1200px-Giovanni_Pauolo_Panini_-_Fantasy_View_with_the_Pantheon_and_other_Monuments_of_Ancient_Rome_-_Google_Art_Project.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .box-17 {
-    grid-column: 1 / 2;
-    grid-row: 45 / 48;
-    font-size: 100%;
-    background: url('resources/images/1200px-Giovanni_Pauolo_Panini_-_Fantasy_View_with_the_Pantheon_and_other_Monuments_of_Ancient_Rome_-_Google_Art_Project.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .box-18 {
-    grid-column: 1 / 2;
-    grid-row: 45 / 53;
-    font-size: 100%;
-    background: url('resources/images/1200px-Giovanni_Pauolo_Panini_-_Fantasy_View_with_the_Pantheon_and_other_Monuments_of_Ancient_Rome_-_Google_Art_Project.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .box-19 {
-    grid-column: 2 / 4;
-    grid-row: 48 / 50;
-    font-size: 100%;
-    background: url('resources/images/gears-cogs-machine-machinery-159298.jpeg');
-    background-size: cover;
-    background-attachment: fixed;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .box-20 {
-    grid-column: 1 / 3;
-    grid-row: 33 / 36;
-    font-size: 100%;
-    background: url('resources/images/raj.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-color: hsl(89, 43%, 51%);
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .box-21 {
-    grid-column: 3 / 4;
-    grid-row: 33 / 36;
-    font-size: 100%;
-    background: url('resources/images/1200px-Giovanni_Pauolo_Panini_-_Fantasy_View_with_the_Pantheon_and_other_Monuments_of_Ancient_Rome_-_Google_Art_Project.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .box-22 {
-    grid-column: 1 / 3;
-    grid-row: 36 / 39;
-    font-size: 100%;
-    background: url('resources/images/1200px-Giovanni_Pauolo_Panini_-_Fantasy_View_with_the_Pantheon_and_other_Monuments_of_Ancient_Rome_-_Google_Art_Project.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
   footer {
     box-sizing: border-box;
     text-align: center;
