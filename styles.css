@@ -5,7 +5,6 @@ body {
     font-family: "Philosopher";
     margin: 0;
     color: white;
-    overflow-x: hidden;
 
 
   }
@@ -125,6 +124,11 @@ p {
     grid-gap: 1em;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     grid-template-rows: repeat(auto-fit, 200px);
+    grid-auto-flow: dense;
+}
+.wrapper > :nth-child(8n) {
+  grid-column: span 3;
+  grid-row: span 3;
 }
   .AncientBox {
     color: rgb(255, 255, 255);
