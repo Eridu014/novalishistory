@@ -498,12 +498,5 @@ p {
   }
 
 @media only screen and (max-width: 480px), (orientation: portrait) {
-    .title {
-      width: 270px;
-    }
-    .wrapper .box .novalis {
-      width: 100%;
-      height: 200px;
-      overflow: hidden;
-    }
+  
   } 
