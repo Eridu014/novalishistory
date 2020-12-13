@@ -123,8 +123,8 @@ p {
     display: grid;
     position: relative;
     grid-gap: 1em;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(60, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-rows: repeat(auto-fit, 200px);
 }
   .AncientBox {
     color: rgb(255, 255, 255);
