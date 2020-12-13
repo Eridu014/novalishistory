@@ -120,6 +120,7 @@ p {
     font-size: 350%;
     background: url('resources/images/gizastars.jpg');
     background-size: cover;
+    width: 100%;
     background-attachment: fixed;
     grid-column: 1 / 4;
     grid-row: 1 / 9;
@@ -481,10 +482,13 @@ p {
     font-size: 80%;
   }
 
-@media only screen and (max-width: 480px), (orientation: portrait) {
-    * {
+@media only screen and (max-width: 576px), (orientation: portrait) {
+    .wrapper {
+
       display: grid;
       grid-template-rows: auto;
+      width: 95%;
+      margin: 0 auto;
       grid-gap: .5rem;
       margin: .5rem 0;
     }
