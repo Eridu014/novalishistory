@@ -5,23 +5,7 @@ body {
     font-family: "Philosopher";
     margin: 0;
     color: white;
-
-
   }
-.title {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('resources/images/old.jpg');
-  background-size: cover;
-  border-radius: 5px;
-	padding-bottom: 20px;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  width: 100%;
-	height: auto;
-	color: whitesmoke;
-	text-align: center;
-  z-index: 3;
-  align-items: center;
-}
 .box > img {
     object-fit: cover;
     width: 100%;
@@ -498,5 +482,10 @@ p {
   }
 
 @media only screen and (max-width: 480px), (orientation: portrait) {
-  
+    * {
+      display: grid;
+      grid-template-rows: auto;
+      grid-gap: .5rem;
+      margin: .5rem 0;
+    }
   } 
