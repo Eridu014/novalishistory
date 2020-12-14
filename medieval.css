@@ -101,7 +101,7 @@ p {
     height: auto;
     display: grid;
     gap: 1rem;
-    grid-template-rows: repeat(7, 25%);
+    grid-template-rows: repeat(8, 25%);
     grid-template-columns: repeat(4, 25%);
     grid-template-areas:
     'a a a a'
@@ -112,12 +112,11 @@ p {
     'j k k m'
     'j k k m'
     'h l l n'
-   
-
+    'p p p p'
 }
 
 .MedievalBox {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 123, 0);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 350%;
     background: url('resources/images/glass.jpg');
@@ -137,6 +136,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    border: orange solid .1em;
     grid-area: b;
  
     display: flex;
@@ -154,7 +154,9 @@ p {
   .box-txt-holyRomanEmpire {
     font-size: 100%;
     display: flex;
-    align-items: top;
+    border: orange solid .1em;
+    padding: 1.5rem;
+    align-items: center;
     justify-content: center;
     grid-area: c;
   }
@@ -164,6 +166,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    border: orange solid .1em;
     grid-area: d;
  
     display: flex;
@@ -181,7 +184,9 @@ p {
   .box-txt-feudalEurope {
     font-size: 100%;
     display: flex;
-    align-items: top;
+    border: orange solid .1em;
+    padding: 1.5rem;
+    align-items: center;
     justify-content: center;
     grid-area: e;
   }
@@ -191,6 +196,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    border: orange solid .1em;
     grid-area: f;
  
     display: flex;
@@ -199,8 +205,6 @@ p {
     justify-content: center;
   }
   .box-btn-byzantineEmpire {
-    grid-column: 3 / 4;
-    grid-row: 11;
     font-size: 100%;
     display: flex;
     align-items: center;
@@ -208,11 +212,11 @@ p {
     grid-area: g;
   }
   .box-txt-byzantineEmpire {
-    grid-column: 3 / 4;
-    grid-row: 11 / 14;
     font-size: 100%;
     display: flex;
-    align-items: top;
+    border: orange solid .1em;
+    align-items: center;
+    padding: 1.5rem;
     justify-content: center;
     grid-area: g;
   }
@@ -240,16 +244,18 @@ p {
   .box-txt-riseOfIslam {
     font-size: 100%;
     display: flex;
-    align-items: top;
+    padding: 1.5rem;
+    align-items: center;
     justify-content: center;
     grid-area: h;
-    border: orange solid 2px;
+    border: orange solid .1em;
   }
   .box-15 {
     font-size: 100%;
     background: url('resources/images/ascalon.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    border: orange solid .1em;
     background-attachment: scroll;
     grid-area: k;
  
@@ -268,7 +274,8 @@ p {
   .box-txt-crusades {
     font-size: 100%;
     display: flex;
-    align-items: top;
+    padding: .2em;
+    align-items: center;
     justify-content: center;
     grid-area: l;
     border: orange solid 2px;
@@ -295,10 +302,18 @@ p {
   }
   .box-txt-renaissance {
     font-size: 100%;
+    border: orange solid .1em;
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: center;
     grid-area: n;
+  }
+  footer {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 80%;
+    color: orange;
+    grid-area: p;
   }
   @media only screen and (max-width: 480px), (orientation: portrait) {
     .wrapper .box .novalis {
