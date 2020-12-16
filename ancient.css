@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
 body {
-    background-image: linear-gradient(to right, black, rgb(255, 174, 0));
+    background-image: linear-gradient(to right, rgb(3, 0, 0), rgb(0, 0, 0));
     font-family: "Philosopher";
     margin: 0;
     color: white;
+    overflow: none;
   }
-.novalis {
+  .novalis {
     box-sizing: border-box;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('resources/images/old.jpg');
     background-size: cover;
@@ -15,214 +16,368 @@ body {
     height: auto;
     color: rgb(255, 145, 0);
     border: rgb(255, 145, 0) solid 1px;
-      margin: 0 auto;
+    margin: 0 auto;
   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   
-      z-index: 2;
+    z-index: 2;
     padding-top: 30px;
-      font-size: 9em;
-      font-weight: bold;
-      font-family: "Cinzel Decorative";
-      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 9em;
+    font-weight: bold;
+    font-family: "Cinzel Decorative";
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
-  .nav ul {
-      margin: 0;
+.nav ul {
+	margin: 0;
+}
+.main-nav {
+  font-size: 1.1em;
+	font-weight: lighter;
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+  position: fixed;
+	width: 100%;
+	margin: 0;
+  background-color: black;
+  z-index: 5;
+  text-align: center;
+}
+ .nav li {
+	text-align: center;
+	display: inline-flex;
+}
+.nav a {
+	display: inline-block;
+	color: rgb(255, 174, 0);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	padding: .5em;
+	text-decoration: none;
+	margin: 0;
+}
+.nav a:hover {
+	background-color: rgba(255, 255, 255, .4);
+}
+p {
+  text-align: center;
+}
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
   }
-  .main-nav {
-    font-size: 1.3em;
-      font-weight: lighter;
-      border-bottom: 2px solid rgba(255, 145, 0, .8);
-    position: fixed;
-    height: auto;
-    width: 100%;
-    background-color: black;
-    z-index: 5;
-    text-align: center;
+  
+  .box:nth-child(even) {
+    color: rgb(255, 255, 255);
   }
-   .nav li {
-      text-align: center;
-      display: inline;
+  .nav-front{
+    text-decoration: none;
   }
-  .nav a {
-      display: inline-block;
-      color: rgb(255, 174, 0);
-      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-      padding: 0.5em;
-      text-decoration: none;
-      margin: 0;
+  a.nav-front:link {
+    text-decoration: none;
+    color: #fff
   }
-  .nav a:hover {
-      background-color: rgba(255, 255, 255, .4);
+  
+  a.nav-front:visited {
+    text-decoration: none;
+    color: #fff
   }
-  p {
-    text-align: center;
+  
+  a.nav-front:hover {
+    text-decoration: none;
+    color: #fff
   }
-  .box {
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 150%;
-    border: 2px solid rgba(255, 145, 0, .8);
-    }
-    
-    .box:nth-child(even) {
-      color: rgb(255, 255, 255);
-    }
-    .nav-front{
-      text-decoration: none;
-    }
-    a.nav-front:link {
-      text-decoration: none;
-      color: #fff
-    }
-    
-    a.nav-front:visited {
-      text-decoration: none;
-      color: #fff
-    }
-    
-    a.nav-front:hover {
-      text-decoration: none;
-      color: #fff
-    }
-    
-    a.nav-front:active {
-      text-decoration: none;
-      color: #fff
-    }
-    
-  .wrapper {
-      display: grid;
-      position: relative;
-      grid-gap: 1em;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      grid-template-rows: repeat(auto-fit, 200px);
-      grid-auto-flow: dense;
+  
+  a.nav-front:active {
+    text-decoration: none;
+    color: #fff
   }
-  .wrapper > :nth-child(n) {
-    grid-column: span 5;
-    grid-row: span 8;
-  }
+  /*Content Section*/
 
-  /* content section */
-  .box-1 {
+  .wrapper {
+    height: auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(16, 15rem);
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas:
+    'a a a a'
+    'b d d f'
+    'b d d f'
+    'c d d g'
+    'j e e m'
+    'j k k m'
+    'j k k m'
+    'h l l n'
+    'w w w o'
+    'w w w o'
+    'x x x y'
+    'x x x y'
+    'p p p p'
+}
+
+.AncientBox {
+    color: rgb(255, 123, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 350%;
+    background: url('resources/images/sphinx.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    grid-area: a;
+  
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-11 {
     font-size: 100%;
     background: url('resources/images/sumeria.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-color: orange;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .box-2 {
-    font-size: 100%;
-    background: url('resources/images/sphinx.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-color: orange;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .box-3 {
-    font-size: 100%;
-    background: url('resources/images/corum.jpg');
     background-size: cover;
-    background-attachment: scroll;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .box-4 {
-    font-size: 100%;
-    background: url('resources/images/IndusTitle.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .box-5 {
-    font-size: 100%;
-    background: url('resources/images/caesar.jpeg');
-    background-size: contain;
     background-repeat: no-repeat;
     background-attachment: scroll;
-
+    border: orange solid .1em;
+    grid-area: b;
+ 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
   }
-  .box-6 {
+  .box-btn-ancientMesopotamia {
     font-size: 100%;
-    background: url('resources/images/Cyrus_the_Great_II.jpg');
-    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: b;
+  }
+  .box-txt-ancientMesopotamia {
+    font-size: 100%;
+    display: flex;
+    border: orange solid .1em;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    grid-area: c;
+  }
+  .box-12 {
+    font-size: 100%;
+    background: url('resources/images/gizastars.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: right;
-
+    border: orange solid .1em;
+    grid-area: d;
+ 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
   }
-  .box-7 {
+  .box-btn-ancientEgypt {
     font-size: 100%;
-    background: url('resources/images/AlextheGreat.jpg');
-    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: d;
+  }
+  .box-txt-ancientEgypt {
+    font-size: 100%;
+    display: flex;
+    border: orange solid .1em;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    grid-area: e;
+  }
+  .box-13 {
+    font-size: 100%;
+    background: url('resources/images/xia.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-
+    border: orange solid .1em;
+    grid-area: f;
+ 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
   }
-  .box-8 {
+  .box-btn-ancientChina {
     font-size: 100%;
-    background: url('resources/images/caesar.jpeg');
-    background-size: cover;
-    background-attachment: fixed;
-
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    grid-area: f;
   }
-  .box-9 {
+  .box-txt-ancientChina {
     font-size: 100%;
-    background: url('resources/images/1200px-Giovanni_Pauolo_Panini_-_Fantasy_View_with_the_Pantheon_and_other_Monuments_of_Ancient_Rome_-_Google_Art_Project.jpg');
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    justify-content: center;
+    grid-area: g;
+  }
+  .box-14 {
+    font-size: 100%;
+    background: url('resources/images/aslan.jpg');
     background-size: cover;
-    background-attachment: no-repeat;
-
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    border: orange solid .1em;
+    grid-area: j;
+ 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
   }
+  .box-btn-ancientAnatolia {
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: j;
+  }
+  .box-txt-ancientAnatolia {
+    font-size: 100%;
+    background-color: black;
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    grid-area: h;
+  }
+  .box-15 {
+    font-size: 100%;
+    background: url('resources/images/tennisCourtOath.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: orange solid .1em;
+    background-attachment: scroll;
+    grid-area: k;
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-btn-enlightenment {
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: l;
+  }
+  .box-txt-enlightenment {
+    font-size: 100%;
+    display: flex;
+    padding: .2em;
+    align-items: center;
+    justify-content: center;
+    grid-area: l;
+    border: orange solid 2px;
+  }
+  .box-16 {
+    font-size: 100%;
+    background: url('resources/images/imperialism.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    grid-area: m;
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-btn-ageOfImperialism {
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: n;
+  }
+  .box-txt-ageOfImperialism {
+    font-size: 100%;
+    border: orange solid .1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: n;
+  }
+  .box-17 {
+    font-size: 100%;
+    background: url('resources/images/ww1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    grid-area: w;
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-btn-worldWars {
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: o;
+  }
+  .box-txt-worldWars {
+    font-size: 100%;
+    border: orange solid .1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: o;
+  }
+  .box-18 {
+    font-size: 100%;
+    background: url('resources/images/triumvirate.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    grid-area: x;
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-btn-romanEmpire {
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: x;
+  }
+  .box-txt-romanEmpire {
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: y;
+  }
+  footer {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 80%;
+    color: orange;
+    grid-area: p;
+  }
+  @media only screen and (max-width: 480px), (orientation: portrait) {
+    .wrapper .box .novalis {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+  } 
+

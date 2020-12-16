@@ -10,10 +10,13 @@
     width: 300px;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
+    text-decoration: none;
+    bottom: 0%;
 
 }
 .btn:hover {
     transform: rotateX(-90deg);
+    text-decoration: none;
 }
 
 .side {
@@ -35,9 +38,14 @@
 }
 
 .hover-side {
-    color: white;
-    background-color: black;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     border: 10px solid orange;
     transform: rotateX(90deg) translateZ(25px);
 
+}
+
+.hlink {
+    text-decoration: none;
+    color: inherit
 }

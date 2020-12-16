@@ -101,48 +101,25 @@ p {
     height: auto;
     display: grid;
     gap: 1rem;
-    grid-template-rows: repeat(13, 25%);
+    grid-template-rows: repeat(8, 25%);
     grid-template-columns: repeat(4, 25%);
     grid-template-areas:
     'a a a a'
     'b d d f'
-    'b d d f'
-    'c d d g'
-    'j e e m'
+    'c e e g'
+    'c k k g'
+    'j k k m'
     'j k k m'
     'j k k m'
     'h l l n'
-    'w w w o'
-    'w w w o'
-    'y x x x'
-    'y x x x'
-    'p p p p';
-
-    --stagger-delay: 1000ms; 
+    'p p p p'
 }
 
-@keyframes cardEntrance {
-    from {
-        opacity: 0;
-        transform: scale(0.3);
-        filter: hue-rotate(180deg);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-        filter: hue-rotate(0deg);
-    }
-} 
-.box {
-    animation: cardEntrance 700ms ease-out;
-    animation-fill-mode: backwords;
-}
-
-.ModernBox {
+.ReligionBox {
     color: rgb(255, 123, 0);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 350%;
-    background: url('resources/images/nuclear.jpg');
+    background: url('resources/images/bible.jpg');
     background-size: cover;
     background-attachment: fixed;
     grid-area: a;
@@ -155,7 +132,7 @@ p {
   }
   .box-11 {
     font-size: 100%;
-    background: url('resources/images/Luther_at_the_Diet_of_Worms.jpg');
+    background: url('resources/images/shiva.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -166,17 +143,15 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    animation-delay: calc(1 * var(--stagger-delay));
-
   }
-  .box-btn-reformation {
+  .box-btn-hindu {
     font-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: b;
   }
-  .box-txt-reformation {
+  .box-txt-hindu {
     font-size: 100%;
     display: flex;
     border: orange solid .1em;
@@ -184,11 +159,10 @@ p {
     align-items: center;
     justify-content: center;
     grid-area: c;
-    animation-delay: calc(2 * var(--stagger-delay));
   }
   .box-12 {
     font-size: 100%;
-    background: url('resources/images/Christopher_Columbus.png');
+    background: url('resources/images/hebrew.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -200,14 +174,14 @@ p {
     align-items: center;
     justify-content: center;
   }
-  .box-btn-newWorld {
+  .box-btn-judaism {
     font-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: d;
   }
-  .box-txt-newWorld {
+  .box-txt-judaism {
     font-size: 100%;
     display: flex;
     border: orange solid .1em;
@@ -218,7 +192,7 @@ p {
   }
   .box-13 {
     font-size: 100%;
-    background: url('resources/images/newton.jpg');
+    background: url('resources/images/zoroaster.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -230,14 +204,14 @@ p {
     align-items: center;
     justify-content: center;
   }
-  .box-btn-scientificRevolution {
+  .box-btn-zoroastrianism {
     font-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: f;
   }
-  .box-txt-scientificRevolution {
+  .box-txt-zoroastrianism {
     font-size: 100%;
     display: flex;
     border: orange solid .1em;
@@ -248,7 +222,7 @@ p {
   }
   .box-14 {
     font-size: 100%;
-    background: url('resources/images/moderneCyklopen.jpg');
+    background: url('resources/images/quran3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -260,14 +234,14 @@ p {
     align-items: center;
     justify-content: center;
   }
-  .box-btn-industrialRevolution {
+  .box-btn-islam {
     font-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: j;
   }
-  .box-txt-industrialRevolution {
+  .box-txt-islam {
     font-size: 100%;
     display: flex;
     padding: 1.5rem;
@@ -278,7 +252,7 @@ p {
   }
   .box-15 {
     font-size: 100%;
-    background: url('resources/images/tennisCourtOath.jpg');
+    background: url('resources/images/jesusChrist.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border: orange solid .1em;
@@ -290,14 +264,14 @@ p {
     align-items: center;
     justify-content: center;
   }
-  .box-btn-enlightenment {
+  .box-btn-christianity {
     font-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: k;
   }
-  .box-txt-enlightenment {
+  .box-txt-christianity {
     font-size: 100%;
     display: flex;
     padding: .2em;
@@ -308,7 +282,7 @@ p {
   }
   .box-16 {
     font-size: 100%;
-    background: url('resources/images/imperialism.jpg');
+    background: url('resources/images/siddharta.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -319,76 +293,20 @@ p {
     align-items: center;
     justify-content: center;
   }
-  .box-btn-ageOfImperialism {
+  .box-btn-buddhism {
     font-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: m;
   }
-  .box-txt-ageOfImperialism {
+  .box-txt-buddhism {
     font-size: 100%;
     border: orange solid .1em;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: n;
-  }
-  .box-17 {
-    font-size: 100%;
-    background: url('resources/images/ww1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    grid-area: w;
- 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .box-btn-worldWars {
-    font-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: w;
-  }
-  .box-txt-worldWars {
-    font-size: 100%;
-    border: orange solid .1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: o;
-  }
-  .box-18 {
-    font-size: 100%;
-    background: url('resources/images/vietnamWar.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    grid-area: x;
- 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .box-btn-coldWar {
-    font-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: x;
-  }
-  .box-txt-coldWar {
-    font-size: 100%;
-    border: orange solid .1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: y;
   }
   footer {
     box-sizing: border-box;
@@ -404,5 +322,4 @@ p {
       overflow: hidden;
     }
   } 
-
 
