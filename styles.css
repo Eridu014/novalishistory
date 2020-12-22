@@ -231,7 +231,7 @@ p {
       margin: 0 auto;
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(1fr);
+      grid-template-columns: repeat(1, 1fr);
       
     }
     nav .main-nav .nav ul .nav li {
