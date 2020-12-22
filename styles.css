@@ -234,8 +234,22 @@ p {
       grid-template-columns: repeat(1, 1fr);
       
     }
-    nav .main-nav .nav ul .nav li {
-      display: none;
+    
+    .c_hamburger{
+      color:#FFF;
+      background-color: grey;
+      cursor:pointer;
+      padding:1em;
+      display:inline-block;
+    }
+    
+    .expanded{
+      height:100%;
+      
+    }
+    
+    *, *:before, *:after {
+      box-sizing: border-box;
     }
   }
   
