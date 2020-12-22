@@ -234,7 +234,7 @@ p {
       grid-template-columns: repeat(1fr);
       
     }
-    .main-nav {
+    main .main-nav {
       display: none;
     }
   }
