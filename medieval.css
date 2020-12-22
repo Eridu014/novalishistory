@@ -105,13 +105,13 @@ p {
     grid-template-columns: repeat(4, 25%);
     grid-template-areas:
     'a a a a'
-    'b d d f'
-    'b d d f'
-    'c d d g'
-    'j e e m'
-    'j k k m'
-    'j k k m'
-    'h l l n'
+    'b d d e'
+    'b d d e'
+    'c d d f'
+    'g j j m'
+    'g k k m'
+    'g k k m'
+    'i l l n'
     'p p p p'
 }
 
@@ -149,7 +149,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: c;
+    grid-area: b;
   }
   .box-txt-holyRomanEmpire {
     font-size: 100%;
@@ -179,7 +179,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: e;
+    grid-area: d;
   }
   .box-txt-feudalEurope {
     font-size: 100%;
@@ -188,7 +188,7 @@ p {
     padding: 1.5rem;
     align-items: center;
     justify-content: center;
-    grid-area: e;
+    grid-area: j;
   }
   .box-13 {
     font-size: 100%;
@@ -197,7 +197,7 @@ p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     border: orange solid .1em;
-    grid-area: f;
+    grid-area: e;
  
     display: flex;
     flex-direction: row;
@@ -209,7 +209,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: g;
+    grid-area: e;
   }
   .box-txt-byzantineEmpire {
     font-size: 100%;
@@ -218,7 +218,7 @@ p {
     align-items: center;
     padding: 1.5rem;
     justify-content: center;
-    grid-area: g;
+    grid-area: f;
   }
   .box-14 {
     font-size: 100%;
@@ -227,7 +227,7 @@ p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     border: orange solid .1em;
-    grid-area: j;
+    grid-area: g;
  
     display: flex;
     flex-direction: row;
@@ -239,7 +239,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: h;
+    grid-area: g;
   }
   .box-txt-riseOfIslam {
     font-size: 100%;
@@ -247,7 +247,7 @@ p {
     padding: 1.5rem;
     align-items: center;
     justify-content: center;
-    grid-area: h;
+    grid-area: i;
     border: orange solid .1em;
   }
   .box-15 {
@@ -269,7 +269,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: l;
+    grid-area: k;
   }
   .box-txt-crusades {
     font-size: 100%;
@@ -298,7 +298,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: n;
+    grid-area: m;
   }
   .box-txt-renaissance {
     font-size: 100%;

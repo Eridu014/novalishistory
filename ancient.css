@@ -272,7 +272,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: l;
+    grid-area: k;
   }
   .box-txt-enlightenment {
     font-size: 100%;
@@ -285,7 +285,7 @@ p {
   }
   .box-16 {
     font-size: 100%;
-    background: url('resources/images/imperialism.jpg');
+    background: url('resources/images/Cyrus_the_Great_II.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -301,7 +301,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: n;
+    grid-area: m;
   }
   .box-txt-ageOfImperialism {
     font-size: 100%;
@@ -313,7 +313,7 @@ p {
   }
   .box-17 {
     font-size: 100%;
-    background: url('resources/images/ww1.jpg');
+    background: url('resources/images/AlextheGreat.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -329,7 +329,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: o;
+    grid-area: w;
   }
   .box-txt-worldWars {
     font-size: 100%;
@@ -345,7 +345,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    grid-area: x;
+    grid-area: o;
  
     display: flex;
     flex-direction: row;

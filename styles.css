@@ -224,6 +224,15 @@ p {
     color: orange;
   }
 
-@media only screen and (max-width: 576px), (orientation: portrait) {
+  @media only screen and (max-width: 960px) {
+    * {
+      padding-top: 0;
+      max-width: 960px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(1fr);
+      
+    }
+  }
   
-  } 
