@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: .2rem;
+}
 body {
     background-image: linear-gradient(to right, rgb(3, 0, 0), rgb(0, 0, 0));
     font-family: "Philosopher";
-    margin: 0;
     color: white;
     overflow: none;
+    padding: 1rem;
   }
   .novalis {
     box-sizing: border-box;
@@ -100,32 +104,29 @@ p {
   .wrapper {
     height: auto;
     display: grid;
-    gap: 1rem;
-    grid-template-rows: repeat(16, 15rem);
+    gap: 0;
+    grid-template-rows: repeat(10, 25%);
     grid-template-columns: repeat(4, 25%);
     grid-template-areas:
     'a a a a'
-    'b d d f'
-    'b d d f'
-    'c d d g'
-    'j e e m'
-    'j k k m'
-    'j k k m'
-    'h l l n'
-    'w w w o'
-    'w w w o'
-    'x x x y'
-    'x x x y'
-    'q z z z'
-    'q z z z'
+    'b d d e'
+    'b d d e'
+    'c d d f'
+    'g j j m'
+    'g k k m'
+    'g k k m'
+    'i l l n'
+    's s t t'
+    's s t t'
+    'r r q q'
     'p p p p'
 }
 
-.AncientBox {
+.MedievalBox {
     color: rgb(255, 123, 0);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 350%;
-    background: url('resources/images/sphinx.jpg');
+    background: url('resources/images/glass.jpg');
     background-size: cover;
     background-attachment: fixed;
     grid-area: a;
@@ -138,7 +139,7 @@ p {
   }
   .box-11 {
     font-size: 100%;
-    background: url('resources/images/sumeria.jpg');
+    background: url('resources/images/thucydides.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -150,14 +151,14 @@ p {
     align-items: center;
     justify-content: center;
   }
-  .box-btn-ancientMesopotamia {
+  .box-btn-ancientGreeks {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: b;
   }
-  .box-txt-ancientMesopotamia {
+  .box-txt-ancientGreeks {
     font-size: 100%;
     display: flex;
     border: orange solid .1em;
@@ -168,7 +169,7 @@ p {
   }
   .box-12 {
     font-size: 100%;
-    background: url('resources/images/gizastars.jpg');
+    background: url('resources/images/aquinas.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -180,84 +181,85 @@ p {
     align-items: center;
     justify-content: center;
   }
-  .box-btn-ancientEgypt {
+  .box-btn-christianHistory {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: d;
   }
-  .box-txt-ancientEgypt {
+  .box-txt-christianHistory {
     font-size: 100%;
     display: flex;
     border: orange solid .1em;
     padding: 1.5rem;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    grid-area: e;
+    grid-area: j;
   }
   .box-13 {
     font-size: 100%;
-    background: url('resources/images/xia.jpg');
+    background: url('resources/images/alfarabi.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
     border: orange solid .1em;
-    grid-area: f;
+    grid-area: e;
  
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  .box-btn-ancientChina {
+  .box-btn-islamicHistory {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    grid-area: f;
+    grid-area: e;
   }
-  .box-txt-ancientChina {
+  .box-txt-islamicHistory {
     font-size: 100%;
     display: flex;
+    border: orange solid .1em;
     align-items: center;
     padding: 1.5rem;
     justify-content: center;
-    grid-area: g;
+    grid-area: f;
   }
   .box-14 {
     font-size: 100%;
-    background: url('resources/images/aslan.jpg');
+    background: url('resources/images/voltaire.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
     border: orange solid .1em;
-    grid-area: j;
+    grid-area: g;
  
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  .box-btn-ancientAnatolia {
+  .box-btn-enlightenmentHistoriography {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    grid-area: j;
+    grid-area: g;
   }
-  .box-txt-ancientAnatolia {
+  .box-txt-enlightenmentHistoriography {
     font-size: 100%;
-    background-color: black;
     display: flex;
     padding: 1.5rem;
     align-items: center;
     justify-content: center;
-    grid-area: h;
+    grid-area: i;
+    border: orange solid .1em;
   }
   .box-15 {
     font-size: 100%;
-    background: url('resources/images/tennisCourtOath.jpg');
+    background: url('resources/images/hegel.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border: orange solid .1em;
@@ -269,14 +271,14 @@ p {
     align-items: center;
     justify-content: center;
   }
-  .box-btn-ancientGreece {
+  .box-btn-hegelianHistory {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: k;
   }
-  .box-txt-ancientGreece {
+  .box-txt-hegelianHistory {
     font-size: 100%;
     display: flex;
     padding: .2em;
@@ -287,8 +289,9 @@ p {
   }
   .box-16 {
     font-size: 100%;
-    background: url('resources/images/Cyrus_the_Great_II.jpg');
+    background: url('resources/images/Marx_and_Engels.jpg');
     background-size: cover;
+    border: orange solid .2em;
     background-repeat: no-repeat;
     background-attachment: scroll;
     grid-area: m;
@@ -298,103 +301,20 @@ p {
     align-items: center;
     justify-content: center;
   }
-  .box-btn-persianEmpire {
+  .box-btn-marxistHistory {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: m;
   }
-  .box-txt-persianEmpire {
+  .box-txt-marxistHistory {
     font-size: 100%;
     border: orange solid .1em;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: n;
-  }
-  .box-17 {
-    font-size: 100%;
-    background: url('resources/images/AlextheGreat.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    grid-area: w;
- 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .box-btn-hellenisticPeriod {
-    font-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: w;
-  }
-  .box-txt-hellenisticPeriod {
-    font-size: 100%;
-    border: orange solid .1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: o;
-  }
-  .box-18 {
-    font-size: 100%;
-    background: url('resources/images/triumvirate.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    grid-area: x;
- 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .box-btn-romanEmpire {
-    font-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: x;
-  }
-  .box-txt-romanEmpire {
-    font-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: y;
-  }
-  .box-19 {
-    font-size: 100%;
-    background: url('resources/images/AlextheGreat.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    grid-area: z;
- 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .box-btn-migrationPeriod {
-    font-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: z;
-  }
-  .box-txt-migrationPeriod {
-    font-size: 100%;
-    border: orange solid .1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: q;
   }
   footer {
     box-sizing: border-box;
@@ -403,11 +323,73 @@ p {
     color: orange;
     grid-area: p;
   }
+  .box-17 {
+    font-size: 100%;
+    background: url('resources/images/thomas_carlyle.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    border: orange solid .1em;
+    grid-area: s;
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-btn-19thCenturyHistoriography {
+    font-size: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    grid-area: s;
+  }
+  .box-txt-19thCenturyHistoriography {
+    font-size: 100%;
+    display: flex;
+    border: orange solid .1em;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    grid-area: r;
+  }
+  .box-18 {
+    font-size: 100%;
+    background: url('resources/images/spengler.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    border: orange solid .1em;
+    grid-area: t;
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-btn-20thCenturyHistoriography {
+    font-size: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    grid-area: t;
+  }
+  .box-txt-20thCenturyHistoriography {
+    font-size: 100%;
+    display: flex;
+    border: orange solid .1em;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    grid-area: q;
+  }
   @media only screen and (max-width: 480px), (orientation: portrait) {
-    .wrapper .box .novalis {
+    * {
       width: 100%;
       height: 200px;
       overflow: hidden;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto, 200px);
     }
   } 
 

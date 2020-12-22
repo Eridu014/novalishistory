@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
     background-image: linear-gradient(to right, black, rgb(255, 174, 0));
     font-family: "Philosopher";
@@ -33,25 +38,25 @@ body {
 	margin: 0;
 }
 .main-nav {
-  font-size: 1.3em;
+  font-size: 1.1em;
 	font-weight: lighter;
-	border-bottom: 2px solid rgba(255, 145, 0, .8);
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
   position: fixed;
-  height: auto;
-  width: 100%;
+	width: 100%;
+	margin: 0;
   background-color: black;
   z-index: 5;
   text-align: center;
 }
  .nav li {
 	text-align: center;
-	display: inline;
+	display: inline-flex;
 }
 .nav a {
 	display: inline-block;
 	color: rgb(255, 174, 0);
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	padding: 0.5em;
+	padding: .5em;
 	text-decoration: none;
 	margin: 0;
 }
@@ -224,32 +229,4 @@ p {
     color: orange;
   }
 
-  @media only screen and (max-width: 960px) {
-    * {
-      padding-top: 0;
-      max-width: 960px;
-      margin: 0 auto;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      
-    }
-    
-    .c_hamburger{
-      color:#FFF;
-      background-color: grey;
-      cursor:pointer;
-      padding:1em;
-      display:inline-block;
-    }
-    
-    .expanded{
-      height:100%;
-      
-    }
-    
-    *, *:before, *:after {
-      box-sizing: border-box;
-    }
-  }
-  
+ 

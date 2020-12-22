@@ -32,7 +32,7 @@
 
 .default-side {
     background-color: black;
-    border: 10px solid orange;
+    border: .5rem solid orange;
     color: white;
     transform: translateZ(25px);
 }
@@ -40,7 +40,7 @@
 .hover-side {
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
-    border: 10px solid orange;
+    border: .5rem solid orange;
     transform: rotateX(90deg) translateZ(25px);
 
 }
