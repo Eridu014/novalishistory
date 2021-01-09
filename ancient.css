@@ -196,7 +196,7 @@ p {
     display: flex;
     border: orange solid .1em;
     padding: 1.5rem;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     grid-area: e;
   }

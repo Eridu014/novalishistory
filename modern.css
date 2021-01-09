@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: .2rem;
+}
 body {
-    background-image: linear-gradient(to right, rgb(3, 0, 0), rgb(0, 0, 0));
-    font-family: "Philosopher";
-    margin: 0;
-    color: white;
-    overflow: none;
-  }
+  background-image: linear-gradient(to right, rgb(3, 0, 0), rgb(0, 0, 0));
+  font-family: "Philosopher";
+  color: white;
+  overflow: none;
+  padding: 1rem;
+}
   .novalis {
     box-sizing: border-box;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('resources/images/old.jpg');
@@ -100,7 +104,7 @@ p {
   .wrapper {
     height: auto;
     display: grid;
-    gap: 1rem;
+    gap: 0;
     grid-template-rows: repeat(13, 25%);
     grid-template-columns: repeat(4, 25%);
     grid-template-areas:
@@ -172,7 +176,7 @@ p {
   .box-btn-reformation {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: b;
   }
@@ -203,7 +207,7 @@ p {
   .box-btn-newWorld {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: d;
   }
@@ -233,7 +237,7 @@ p {
   .box-btn-scientificRevolution {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: f;
   }
@@ -263,7 +267,7 @@ p {
   .box-btn-industrialRevolution {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: j;
   }
@@ -293,7 +297,7 @@ p {
   .box-btn-enlightenment {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: k;
   }
@@ -312,6 +316,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    border: orange solid .1em;
     grid-area: m;
  
     display: flex;
@@ -322,7 +327,7 @@ p {
   .box-btn-ageOfImperialism {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: m;
   }
@@ -340,6 +345,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    border: orange solid .1em;
     grid-area: w;
  
     display: flex;
@@ -368,6 +374,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    border: orange solid .1em;
     grid-area: x;
  
     display: flex;

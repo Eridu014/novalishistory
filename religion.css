@@ -151,7 +151,7 @@ p {
   .box-btn-hindu {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: b;
   }
@@ -181,7 +181,7 @@ p {
   .box-btn-judaism {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: d;
   }
@@ -211,7 +211,7 @@ p {
   .box-btn-zoroastrianism {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: f;
   }
@@ -241,7 +241,7 @@ p {
   .box-btn-islam {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: j;
   }
@@ -271,7 +271,7 @@ p {
   .box-btn-christianity {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: k;
   }
@@ -282,12 +282,13 @@ p {
     align-items: center;
     justify-content: center;
     grid-area: l;
-    border: orange solid 2px;
+    border: orange solid .1em;
   }
   .box-16 {
     font-size: 100%;
     background: url('resources/images/siddharta.jpg');
     background-size: cover;
+    border: orange solid .1em;
     background-repeat: no-repeat;
     background-attachment: scroll;
     grid-area: m;
@@ -300,7 +301,7 @@ p {
   .box-btn-buddhism {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: m;
   }

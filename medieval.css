@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: .2rem;
+}
 body {
-    background-image: linear-gradient(to right, rgb(3, 0, 0), rgb(0, 0, 0));
-    font-family: "Philosopher";
-    margin: 0;
-    color: white;
-    overflow: none;
-  }
+  background-image: linear-gradient(to right, rgb(3, 0, 0), rgb(0, 0, 0));
+  font-family: "Philosopher";
+  color: white;
+  overflow: none;
+  padding: 1rem;
+}
   .novalis {
     box-sizing: border-box;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('resources/images/old.jpg');
@@ -100,7 +104,7 @@ p {
   .wrapper {
     height: auto;
     display: grid;
-    gap: 1rem;
+    gap: 0rem;
     grid-template-rows: repeat(8, 25%);
     grid-template-columns: repeat(4, 25%);
     grid-template-areas:
@@ -112,7 +116,25 @@ p {
     'g k k m'
     'g k k m'
     'i l l n'
-    'p p p p'
+    'p p p p';
+--stagger-delay: 1000ms; 
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+        filter: hue-rotate(180deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: hue-rotate(0deg);
+    }
+} 
+.box {
+    animation: cardEntrance 1s ease-out;
+    animation-fill-mode: backwords;
 }
 
 .MedievalBox {
@@ -147,7 +169,7 @@ p {
   .box-btn-holyRomanEmpire {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: b;
   }
@@ -177,7 +199,7 @@ p {
   .box-btn-feudalEurope {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: d;
   }
@@ -207,7 +229,7 @@ p {
   .box-btn-byzantineEmpire {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: e;
   }
@@ -237,7 +259,7 @@ p {
   .box-btn-riseOfIslam {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: g;
   }
@@ -267,7 +289,7 @@ p {
   .box-btn-crusades {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: k;
   }
@@ -296,7 +318,7 @@ p {
   .box-btn-renaissance {
     font-size: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     grid-area: m;
   }
