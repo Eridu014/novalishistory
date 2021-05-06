@@ -37,7 +37,6 @@ body {
 .nav ul {
 	margin: 0;
 }
-/*Main Navigation Bar*/
 .main-nav {
   font-size: 1.1em;
 	font-weight: lighter;
@@ -80,11 +79,10 @@ p {
   }
   .nav-front{
     text-decoration: none;
-    color: orange;
   }
   a.nav-front:link {
     text-decoration: none;
-    color: rgb(189, 144, 22)
+    color: #fff
   }
   
   a.nav-front:visited {
@@ -106,25 +104,20 @@ p {
   .wrapper {
     height: auto;
     display: grid;
-    gap: 0;
-    grid-template-rows: repeat(13, 25%);
+    gap: 0rem;
+    grid-template-rows: repeat(8, 25%);
     grid-template-columns: repeat(4, 25%);
     grid-template-areas:
     'a a a a'
-    'b d d f'
-    'b d d f'
-    'c d d g'
-    'j e e m'
-    'j k k m'
-    'j k k m'
-    'h l l n'
-    'w w w o'
-    'w w w o'
-    'y x x x'
-    'y x x x'
+    'b d d e'
+    'b d d e'
+    'c d d f'
+    'g j j m'
+    'g k k m'
+    'g k k m'
+    'i l l n'
     'p p p p';
-
-    --stagger-delay: 1000ms; 
+--stagger-delay: 1000ms; 
 }
 
 @keyframes cardEntrance {
@@ -140,15 +133,15 @@ p {
     }
 } 
 .box {
-    animation: cardEntrance 700ms ease-out;
+    animation: cardEntrance 1s ease-out;
     animation-fill-mode: backwords;
 }
 
-.ModernBox {
+.MedievalBox {
     color: rgb(255, 123, 0);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 350%;
-    background: url('resources/images/nuclear.jpg');
+    background: url('resources/images/tech.jpg');
     background-size: cover;
     background-attachment: fixed;
     grid-area: a;
@@ -161,7 +154,7 @@ p {
   }
   .box-11 {
     font-size: 100%;
-    background: url('resources/images/Luther_at_the_Diet_of_Worms.jpg');
+    background: url('resources/images/Charlemagne-by-Durer.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -172,17 +165,15 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    animation-delay: calc(1 * var(--stagger-delay));
-
   }
-  .box-btn-reformation {
+  .box-btn-holyRomanEmpire {
     font-size: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     grid-area: b;
   }
-  .box-txt-reformation {
+  .box-txt-holyRomanEmpire {
     font-size: 100%;
     display: flex;
     border: orange solid .1em;
@@ -190,11 +181,10 @@ p {
     align-items: center;
     justify-content: center;
     grid-area: c;
-    animation-delay: calc(2 * var(--stagger-delay));
   }
   .box-12 {
     font-size: 100%;
-    background: url('resources/images/Christopher_Columbus.png');
+    background: url('resources/images/William_the_Conqueror_-_c._1580.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -206,85 +196,85 @@ p {
     align-items: center;
     justify-content: center;
   }
-  .box-btn-newWorld {
+  .box-btn-feudalEurope {
     font-size: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     grid-area: d;
   }
-  .box-txt-newWorld {
+  .box-txt-feudalEurope {
     font-size: 100%;
     display: flex;
     border: orange solid .1em;
     padding: 1.5rem;
     align-items: center;
     justify-content: center;
-    grid-area: e;
+    grid-area: j;
   }
   .box-13 {
     font-size: 100%;
-    background: url('resources/images/newton.jpg');
+    background: url('resources/images/John_II_Komnenos_-_mosaic_image_digitally_restored.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
     border: orange solid .1em;
-    grid-area: f;
+    grid-area: e;
  
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  .box-btn-scientificRevolution {
+  .box-btn-byzantineEmpire {
     font-size: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    grid-area: f;
+    grid-area: e;
   }
-  .box-txt-scientificRevolution {
+  .box-txt-byzantineEmpire {
     font-size: 100%;
     display: flex;
     border: orange solid .1em;
     align-items: center;
     padding: 1.5rem;
     justify-content: center;
-    grid-area: g;
+    grid-area: f;
   }
   .box-14 {
     font-size: 100%;
-    background: url('resources/images/moderneCyklopen.jpg');
+    background: url('resources/images/quran\ \(2\).jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
     border: orange solid .1em;
-    grid-area: j;
+    grid-area: g;
  
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  .box-btn-industrialRevolution {
+  .box-btn-riseOfIslam {
     font-size: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    grid-area: j;
+    grid-area: g;
   }
-  .box-txt-industrialRevolution {
+  .box-txt-riseOfIslam {
     font-size: 100%;
     display: flex;
     padding: 1.5rem;
     align-items: center;
     justify-content: center;
-    grid-area: h;
+    grid-area: i;
     border: orange solid .1em;
   }
   .box-15 {
     font-size: 100%;
-    background: url('resources/images/tennisCourtOath.jpg');
+    background: url('resources/images/ascalon.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border: orange solid .1em;
@@ -296,14 +286,14 @@ p {
     align-items: center;
     justify-content: center;
   }
-  .box-btn-enlightenment {
+  .box-btn-crusades {
     font-size: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     grid-area: k;
   }
-  .box-txt-enlightenment {
+  .box-txt-crusades {
     font-size: 100%;
     display: flex;
     padding: .2em;
@@ -314,11 +304,10 @@ p {
   }
   .box-16 {
     font-size: 100%;
-    background: url('resources/images/imperialism.jpg');
+    background: url('resources/images/rebornVenus.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    border: orange solid .1em;
     grid-area: m;
  
     display: flex;
@@ -326,78 +315,20 @@ p {
     align-items: center;
     justify-content: center;
   }
-  .box-btn-ageOfImperialism {
+  .box-btn-renaissance {
     font-size: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     grid-area: m;
   }
-  .box-txt-ageOfImperialism {
+  .box-txt-renaissance {
     font-size: 100%;
     border: orange solid .1em;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: n;
-  }
-  .box-17 {
-    font-size: 100%;
-    background: url('resources/images/ww1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    border: orange solid .1em;
-    grid-area: w;
- 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .box-btn-worldWars {
-    font-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: w;
-  }
-  .box-txt-worldWars {
-    font-size: 100%;
-    border: orange solid .1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: o;
-  }
-  .box-18 {
-    font-size: 100%;
-    background: url('resources/images/vietnamWar.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    border: orange solid .1em;
-    grid-area: x;
- 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .box-btn-coldWar {
-    font-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: x;
-  }
-  .box-txt-coldWar {
-    font-size: 100%;
-    border: orange solid .1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: y;
   }
   footer {
     box-sizing: border-box;
@@ -413,5 +344,4 @@ p {
       overflow: hidden;
     }
   } 
-
 
